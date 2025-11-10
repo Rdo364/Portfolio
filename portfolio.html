@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Gabriel ou Rato</title>
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+  <!-- Cabeçalho -->
+  <header class="flex flex-col md:flex-row items-center justify-between px-6 py-6 border-b border-gray-800">
+    <div class="text-center md:text-left mb-4 md:mb-0">
+      <h1 class="text-3xl font-bold text-indigo-400">Gabriel Carriel (tambem me chamam de rato)</h1>
+      <p class="text-gray-400">Desenvolvedor</p>
+    </div>
+    <nav class="space-x-4 text-gray-300">
+      <a href="#sobre" class="hover:text-indigo-400">Sobre mim</a>
+      <a href="#habilidades" class="hover:text-indigo-400">Habilidades</a>
+      <a href="#formacao" class="hover:text-indigo-400">Formação</a>
+      <a href="#projetos" class="hover:text-indigo-400">Projetos</a>
+      <a href="#contato" class="hover:text-indigo-400">Contato</a>
+    </nav>
+  </header>
+
+ 
+  <main class="max-w-4xl mx-auto px-6">
+
+
+    <section id="sobre" class="my-16 text-center">
+      <img src="https://via.placeholder.com/150" alt="Foto de perfil" class="mx-auto rounded-full mb-6 border-4 border-indigo-400 shadow-lg">
+      <h2 class="text-2xl font-semibold text-indigo-400 mb-4">Sobre mim</h2>
+      <p class="text-gray-300 leading-relaxed max-w-2xl mx-auto">
+        Sou um estudante apaixonado por tecnologia, design e programação.  
+        Gosto de criar coisas novas e aprender com cada projeto que desenvolvo.  
+        Atualmente estou estudando no <strong>IFMS - Campus Nova Andradina</strong>.
+      </p>
+    </section>
+
+
+    <section id="habilidades" class="my-16">
+      <h2 class="text-2xl font-semibold text-indigo-400 mb-4 text-center">Habilidades</h2>
+      <div class="flex flex-wrap justify-center gap-3 text-gray-300">
+        <span class="bg-gray-800 px-4 py-2 rounded-lg">JavaScript</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-lg">HTML & CSS</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-lg">Tailwind CSS</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-lg">Renderização 3D</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-lg">Criatividade</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-lg">Trabalho em equipe</span>
+      </div>
+    </section>
+
+
+    <section id="formacao" class="my-16">
+      <h2 class="text-2xl font-semibold text-indigo-400 mb-4 text-center">Formação e Experiências</h2>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
+        <h3 class="text-lg font-bold text-indigo-300">IFMS - Campus Nova Andradina</h3>
+        <p class="text-gray-400 mt-2">
+          Estudante de Informática. Tenho experiência com programação básica, desenvolvimento web e criação digital.  
+          Já desenvolvi pequenos projetos em JavaScript e estou sempre aprendendo mais sobre tecnologia.
+        </p>
+      </div>
+    </section>
+
+
+    <section id="projetos" class="my-16">
+      <h2 class="text-2xl font-semibold text-indigo-400 mb-6 text-center">Projetos</h2>
+
+
+      <div class="bg-gray-800 p-6 rounded-xl mb-8 shadow-md">
+        <h3 class="text-lg font-bold text-indigo-300 mb-2">Saudação com Nome</h3>
+        <p class="text-gray-400 mb-4">Um programa simples em Node.js que pede o nome do usuário e exibe uma mensagem de boas-vindas.</p>
+        <pre class="bg-gray-900 text-gray-200 p-4 rounded-lg overflow-x-auto text-sm"><code>const readline = require('readline-sync');
+
+function saudar (nome) {
+  console.log(`Ola ${nome}, Seja bem vindo`);
+}
+let nome = readline.question("digite seu nome: ");
+saudar(nome);</code></pre>
+      </div>
+
+      <!-- Projeto 2 -->
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
+        <h3 class="text-lg font-bold text-indigo-300 mb-2">Cálculo de Média</h3>
+        <p class="text-gray-400 mb-4">Programa em Node.js que calcula a média de três notas e informa se o aluno foi aprovado ou reprovado.</p>
+        <pre class="bg-gray-900 text-gray-200 p-4 rounded-lg overflow-x-auto text-sm"><code>const readline = require('readline-sync');
+
+function media(n1, n2, n3) {
+  let resultado = (n1 + n2 + n3) / 3;
+  console.log(`media: ${resultado}`);
+
+  if (resultado >= 6) {
+    console.log("Aprovado");
+  } else {
+    console.log("Reprovado");
+  }
+}
+
+let n1 = (readline.question("Diga a primeira nota "));
+let n2 = (readline.question("Diga a segunda nota "));
+let n3 = (readline.question("Diga a terceira nota "));
+
+media(n1, n2, n3);</code></pre>
+      </div>
+    </section>
+
+
+    <section id="contato" class="my-16 text-center">
+      <h2 class="text-2xl font-semibold text-indigo-400 mb-4">Contato</h2>
+      <p class="text-gray-300">Entre em contato comigo pelas redes abaixo:</p>
+      <div class="mt-4 flex justify-center gap-6">
+        <a href="mailto:gabrielcarriel44@gmail.com" class="text-indigo-400 hover:text-indigo-300 transition-colors">E-mail</a>
+        <a href="https://github.com/Rdo364" class="text-indigo-400 hover:text-indigo-300 transition-colors">GitHub</a>
+        <a href="https://discord.gg/Hrb8vVtpSh" class="text-indigo-400 hover:text-indigo-300 transition-colors">Discord</a>
